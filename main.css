@@ -22,6 +22,58 @@ body {
   grid-template-columns: repeat(3, 1fr);
   width: 33vw;
 }
+.heading {
+  font-size: 2rem;
+  font-weight: bolder;
+  width: 100%;
+  text-align: center;
+  margin: 20px;
+}
+.container {
+  width: 100%;
+  background-color: black;
+  border-radius: 5px;
+  color: wheat;
+  font-size: 0.4rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+span {
+  font-size: 0.6rem;
+}
+
+.btn {
+  width: 50%;
+  padding: 10px;
+  background-color: wheat;
+  color: rgb(78, 69, 69);
+  font-weight: bolder;
+  text-align: center;
+  outline: none;
+  border-radius: 5px;
+  transition: colors 0.3s ease-in-out;
+  cursor: pointer;
+}
+.input_container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  margin: 10px;
+}
+
+.btn:hover {
+  background-color: rgb(241, 212, 157);
+}
 
 .cell {
   width: 11vw;
@@ -44,7 +96,7 @@ body {
   color: wheat;
 }
 
-.winner_popup {
+.popup {
   position: fixed;
   border-radius: 5px;
   padding: 0.5rem;
@@ -59,4 +111,21 @@ body {
   background-color: rgb(2, 10, 31);
   transform: translateX(-50%) translateY(-50%);
   color: wheat;
+}
+
+.input_container > .input {
+  color: azure;
+  border: 1px solid gray;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  background-color: inherit;
+}
+.input_container > .input:focus {
+  border: 1px solid wheat;
+}
+
+.input_container > .label {
+  font-size: 0.8rem;
+  padding: 5px;
 }
